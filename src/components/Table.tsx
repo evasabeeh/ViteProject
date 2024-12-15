@@ -56,7 +56,7 @@ export const Table = () => {
         setFirst(event.first);
     };
 
-    const fetchRows = async (page: number) => {                                   // Fetch API
+    const fetchData = async (page: number) => {                                   // Fetch API
         try {
             setLoading(true);
             const response = await axios.get(
@@ -88,7 +88,7 @@ export const Table = () => {
     };
 
     useEffect(() => {                                                             // Effect hook for API call to fetch the respective page data
-        fetchRows(currentPage);
+        fetchData(currentPage);
     }, [currentPage]);
 
     return (
