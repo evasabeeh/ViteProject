@@ -1,4 +1,4 @@
-export const LoadingOverlay = () => (
+export const LoadingIndicator = () => (
     <div style={{
         backgroundColor: "rgba(255, 255, 255, 0.71)",
         height: "100%",

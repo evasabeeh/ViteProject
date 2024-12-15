@@ -3,7 +3,7 @@ import { DataTable } from "primereact/datatable"
 import { Column } from "primereact/column"
 import { OverlayPanel } from 'primereact/overlaypanel'
 import { ChevronDownIcon } from 'primereact/icons/chevrondown'
-import { LoadingOverlay } from './LoadingOverlay'
+import { LoadingIndicator } from './LoadingIndicator'
 import axios from "axios"                          // For API call
 
 interface Row {                                    // Row definition
@@ -93,9 +93,9 @@ export const Table = () => {
 
     return (
         <>
-            <h1>Artworks Table</h1>
+            <h1>Data Table</h1>
 
-            {loading && <LoadingOverlay />}
+            {loading && <LoadingIndicator />}
 
             <DataTable
                 selectionMode="checkbox"
